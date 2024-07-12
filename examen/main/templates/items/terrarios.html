@@ -1,0 +1,92 @@
+{% extends "plantilla.html" %}
+
+{% load static %}
+
+{% block body%}
+<div class="container">
+    <h2>Terrarios</h2>
+      <div class="row row-cols-1 row-cols-sm-3 gx-5" style="padding: 2%;">
+       
+        <div class="col">
+          <div class="card h-100 text-bg-success">
+            <a href="index.html">
+            <img src="{% static "imagenes\terrario 1.jpg" %}" class="card-img-top" alt="...">
+          </a>
+            <div class="card-body">
+              <h5 class="card-title">Terrario 30x30x45</h5>
+              <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$170.000</span></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100 text-bg-success">
+            <a href="index.html">
+            <img src="{% static "imagenes\Screenshot_2.png" %}" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Terrario 30x20</h5>
+              <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$75.000</span></p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+            <div class="card h-100 text-bg-success">
+              <a href="index.html">
+              <img src="{% static "imagenes\terrario 2.jpg" %}" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Terrario 30x45x32</h5>
+                <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$115.000</span></p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- otro card-->
+
+    <div class="container">
+        
+          <div class="row row-cols-1 row-cols-sm-3 gx-5" style="padding: 2%;">
+           
+            <div class="col">
+              <div class="card h-100 text-bg-success">
+                <a href="index.html">
+                <img src="{% static "imagenes\terrario 3.jpg" %}" class="card-img-top" alt="...">
+              </a>
+                <div class="card-body">
+                  <h5 class="card-title">Terrario 48x24x18</h5>
+                  <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$110.000</span></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card h-100 text-bg-success">
+                <a href="index.html">
+                <img src="{% static "imagenes\terrario 4.jpg" %}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Terrario 60x45x45</h5>
+                  <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$112.000</span></p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col">
+              <div class="card h-100 text-bg-success">
+                <a href="index.html">
+                <img src="{% static "imagenes\terrario 5.jpg" %}" class="card-img-top" alt="...">
+              </a>
+                <div class="card-body">
+                  <h5 class="card-title">Terrario 30x12x18</h5>
+                  <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$95.000</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+{% endblock %}

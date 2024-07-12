@@ -1,0 +1,36 @@
+{% extends 'plantilla.html' %}
+
+{% load static %}
+
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'css\perfil.css' %}">
+
+<div class="center">
+    
+    <h1 style="text-align: center;">perfil de {{usuario.username}}</h1>
+    <div style="display: flex; align-items: center;">
+        <img style="width:30%; margin: 10px;" src="{% static 'imagenes\profile_pic.jpg' %}" alt="foto de perfil">
+   
+    <ul style="color: antiquewhite; list-style-type: none;">
+        <li>Nombre: {{usuario.first_name}} {{usuario.last_name}}</li>
+        <li>Correo: {{usuario.email}}</li>
+        <li>Miembro desde: {{usuario.date_joined}}</li>
+    </ul>
+    <div style="margin: 10px;">
+        <a href="{% url 'eliminar' usuario.username %}">
+            <button  type="submit" class="btn btn-danger"> 
+                eliminar cuenta
+            </button>
+        </a>
+        <a href="{% url 'modificar' usuario.username %}">
+            <button  type="submit" class="btn btn-primary"> 
+                modificar datos
+            </button>
+        </a>
+</div>
+</div>
+    
+
+</div>
+{% endblock %}

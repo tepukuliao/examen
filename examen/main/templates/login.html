@@ -1,0 +1,27 @@
+{% extends "plantilla.html" %}
+
+{% load static %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static "css\login.css" %}">
+
+<div class='center'>
+
+<form action="" method="POST">
+    {% csrf_token %}
+
+<h1>Login</h1>
+
+{{form.as_p}}
+
+<input type="submit" value="Ingresar">
+
+{{error}}
+
+<div class="crear-cuenta">
+    ¿Necesitas una cuenta?<a href="{% url "formulario" %}">Regístrate</a>
+</div>
+
+</form>
+</div>
+{% endblock  %}

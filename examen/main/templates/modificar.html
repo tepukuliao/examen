@@ -1,0 +1,17 @@
+{% extends 'plantilla.html' %}
+
+{% load static %}
+
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'css\perfil.css' %}">
+
+<div class="center">
+    <h1>Modificar Usuario</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+    </form>
+</div>
+{% endblock %}

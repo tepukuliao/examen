@@ -1,0 +1,81 @@
+.titulos{
+    text-align: center;
+    font-size: 50px;
+    color: antiquewhite;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    font-weight: bold;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; 
+}
+
+
+.container-acerca{
+    margin-top: 2%;
+    padding: 2%;
+    background-color: rgba(1, 59, 16, 0.705);
+    text-align: center;
+    color: antiquewhite;
+}
+
+
+.colorICO{
+    color: antiquewhite;
+}
+
+/*?CARRUSEL**/
+.imgcarrusel{
+    width: auto;
+    height: auto;
+  
+}
+.carruselfont{
+    font-weight: bold; 
+    padding-bottom: 20%;
+    
+}
+
+
+
+.carruselfont h2{
+    font-size: 45px;
+    color: antiquewhite;
+}
+
+.carruselfont p{
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+/*!?FIN**/
+
+.container h2{
+    text-align: center; 
+    color: antiquewhite; 
+    font-size: 50px;
+}
+
+
+
+
+body{
+    background-image: url(https://static.nationalgeographicla.com/files/styles/image_3200/public/4reptilegallery.webp?w=1600&h=1179&q=100);
+    background-position: 0cm;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#tit-mapa{
+    color: antiquewhite;
+    text-align: center;
+    
+}
+

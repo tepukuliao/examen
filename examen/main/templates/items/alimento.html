@@ -1,0 +1,92 @@
+{% extends "plantilla.html" %}
+
+{% load static %}
+
+{% block body%}
+<div class="container">
+    <h2>Alimentos</h2>
+      <div class="row row-cols-1 row-cols-sm-3 gx-5" style="padding: 2%;">
+       
+        <div class="col">
+          <div class="card h-100 text-bg-success">
+            <a href="index.html">
+            <img src="{% static "imagenes\comida 1.jpg" %}" class="card-img-top" alt="...">
+          </a>
+            <div class="card-body">
+              <h5 class="card-title">Ración gusano de harina</h5>
+              <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$5.500</span></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100 text-bg-success">
+            <a href="index.html">
+            <img src="{% static "imagenes\comida 2.jpg" %}" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Ración grillos</h5>
+              <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$4.500</span></p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 text-bg-success">
+            <a href="index.html">
+            <img src="{% static "imagenes\Screenshot_1.png" %}" class="card-img-top" alt="...">
+          </a>
+            <div class="card-body">
+              <h5 class="card-title">Crustaseo envasado</h5>
+              <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$2.000 x kilo</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- otro card -->
+
+    <div class="container">
+
+          <div class="row row-cols-1 row-cols-sm-3 gx-5" style="padding: 2%;">
+           
+            <div class="col">
+              <div class="card h-100 text-bg-success">
+                <a href="index.html">
+                <img src="{% static "imagenes\comida 3.jpg" %}" class="card-img-top" alt="...">
+              </a>
+                <div class="card-body">
+                  <h5 class="card-title">Ración cucaracha argentina</h5>
+                  <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$5.000</span></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card h-100 text-bg-success">
+                <a href="index.html">
+                <img src="{% static "imagenes\comida 4.jpg" %}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Raton mediano congelado</h5>
+                  <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$15.000</span></p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col">
+              <div class="card h-100 text-bg-success">
+                <a href="index.html">
+                <img src="{% static "imagenes\comida 5.jpg" %}" class="card-img-top" alt="...">
+              </a>
+                <div class="card-body">
+                  <h5 class="card-title">Gusano de miel</h5>
+                  <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$3.000 x kilo</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+{% endblock %}

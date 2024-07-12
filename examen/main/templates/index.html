@@ -1,0 +1,127 @@
+{% extends "plantilla.html" %}
+
+{% load static %}
+
+{% block body %}
+
+
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="..." >
+        <img src="{% static "imagenes\reptil.jpg" %}" class="d-block w-100" alt="reptiles">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <div class="carruselfont">
+          <h2>Reptiles</h2>
+          <p>Tenemos variedad de reptiles</p>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="...">
+        <img src="{% static "imagenes\terrario.jpg" %}" class="d-block w-100" alt="terrarios">
+      </a>
+      <div class="carousel-caption d-none d-md-block">
+        <div class="carruselfont">
+        <h2 >Terrarios</h2>
+        <p>Terrarios de todos los tamaños</p>
+      </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <a href="...">
+          <img src="{% static "imagenes\comida.jpg" %}" class="d-block w-100" alt="alimentos">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <div class="carruselfont">
+          <h2>Alimentos</h2>
+          <p>Todo lo que necesitas para mantener la salud de tus reptiles</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--!FIN-->
+
+<div class="container-acerca">
+  <h1>Acerca de nosotros</h1>
+  <p id="texto-acerca">En Reptilia Chile, nos apasiona el mundo de los reptiles. Con dedicación y experiencia, ofrecemos a nuestros clientes una amplia gama de especies y accesorios de la más alta calidad. 
+    Nuestro compromiso va más allá de la venta; estamos aquí para brindarte el conocimiento y la asistencia necesaria para cuidar a tus reptiles de manera responsable y cariñosa. 
+    Únete a nuestra comunidad y descubre todo lo que necesitas para proporcionarles un hogar feliz y saludable a tus amigos escamosos.</p>
+</div>
+
+
+  
+
+<div class="container">
+<h2>Destacados</h2>
+  <div class="row row-cols-1 row-cols-sm-3 gx-5" style="padding: 2%;">
+   
+    <div class="col">
+      <div class="card h-100 text-bg-success">
+        <a href="index.html">
+        <img src="{% static "imagenes\Screenshot_3.png" %}" class="card-img-top" alt="...">
+      </a>
+        <div class="card-body">
+          <h5 class="card-title">Falsa coral</h5>
+          <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$70.000</span></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100 text-bg-success">
+        <a href="index.html">
+        <img src="{% static "imagenes\Screenshot_2.png" %}" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Terrario 30x20</h5>
+          <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$25.000</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-bg-success">
+        <a href="index.html">
+        <img src="{% static "imagenes\Screenshot_1.png" %}" class="card-img-top" alt="...">
+      </a>
+        <div class="card-body">
+          <h5 class="card-title">Crustaseo envasado</h5>
+          <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$2.000 x kilo</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div>
+<h1 id="tit-mapa">Encuentranos en</h1>
+<div id="map"></div>
+</div>
+
+<script>
+    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+      key: "AIzaSyAJ_CDqdcENM3KPZv2qOvijUEDkCGnLMgY",
+      v: "weekly",
+      
+    });
+  </script>
+
+<script src="{% static "js\index.js" %}"></script>
+
+{% endblock  %}
+

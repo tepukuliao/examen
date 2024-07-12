@@ -1,0 +1,92 @@
+{% extends "plantilla.html" %}
+
+{% load static %}
+
+{% block body%}
+<div class="container">
+    <h2>Reptiles</h2>
+      <div class="row row-cols-1 row-cols-sm-3 gx-5" style="padding: 2%;">
+       
+        <div class="col">
+          <div class="card h-100 text-bg-success">
+            <a href="index.html">
+            <img src="{% static "imagenes\serpiente 2.png" %}" class="card-img-top" alt="...">
+          </a>
+            <div class="card-body">
+              <h5 class="card-title">Falsa coral</h5>
+              <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$170.000</span></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100 text-bg-success">
+            <a href="index.html">
+            <img src="{% static "imagenes\serpiente 1.jpg" %}" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Piton albina</h5>
+              <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$225.000</span></p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 text-bg-success">
+            <a href="index.html">
+            <img src="{% static "imagenes\serpiente 3.jpg" %}" class="card-img-top" alt="...">
+          </a>
+            <div class="card-body">
+              <h5 class="card-title">serpiente del maiz</h5>
+              <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$150.000</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- otro card--> 
+
+    <div class="container">
+  
+          <div class="row row-cols-1 row-cols-sm-3 gx-5" style="padding: 2%;">
+           
+            <div class="col">
+              <div class="card h-100 text-bg-success">
+                <a href="index.html">
+                <img src="{% static "imagenes\iguana 1.jpg" %}" class="card-img-top" alt="...">
+              </a>
+                <div class="card-body">
+                  <h5 class="card-title">Iguana verde</h5>
+                  <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$45.000</span></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card h-100 text-bg-success">
+                <a href="index.html">
+                <img src="{% static "imagenes\geeko 1.jpg" %}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Geeko crestado</h5>
+                  <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$60.000</span></p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col">
+              <div class="card h-100 text-bg-success">
+                <a href="index.html">
+                <img src="{% static "imagenes\tortuga.jpg" %}" class="card-img-top" alt="...">
+              </a>
+                <div class="card-body">
+                  <h5 class="card-title">tortuga</h5>
+                  <p class="card-text"><span class="letradcto" style="color: antiquewhite;">$300.000</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+{% endblock %}
